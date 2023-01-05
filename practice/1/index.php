@@ -27,6 +27,9 @@ echo "</br>";
      echo "<script>alert(‘Hello World’); </script>";
 echo "<br>";
 //3. Вывести значение, противоположное введенному в переменную (input "5", output "-5").
+$i = 5;
+$s = $i * -1;
+echo $s;
 
 echo "<br>";
 //4. Создать две переменные и вывести результат возможных математических операций между ними (+, -, *, /,%).
@@ -48,5 +51,8 @@ echo "<br>";
 echo "<br>";
 //7. Создать страницу, где описать переменные: font_family, font_size, font_style. Значение в этих
 // переменных — это value соответствующего стиля. вывести тег <p> со стилями, описанными в переменных.
-
+$i = Arial;
+$b = 60;
+$c = italic;
+echo '<p style="font_family:' . value($i) . '; font-size:' . value($b) . 'px; font_style:' . value($c) . '"> Hello </p>'
 ?>
