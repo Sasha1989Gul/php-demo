@@ -14,17 +14,22 @@ echo "<br>";
 //значение 1-й переменной, b — это значение 2-й переменной, rez — результат операции между ними.
 $a = 5;
 $b = 8;
-$rez = $a + $b;
-echo $a . " + " . $b . " = " . $rez;
+echo "Первое число - " . $a . ", второе число - " . $b . "<br/>";
+echo $a . " + " . $b . " = " . $a + $b . "<br/>";
+echo $a . " - " . $b . " = " . $a - $b . "<br/>";
+echo $a . " * " . $b . " = " . $a * $b . "<br/>";
+echo $a . " / " . $b . " = " . $a / $b . "<br/>";
+echo $a . " % " . $b . " = " . $a % $b;
 
 echo "<br>";
 //4. Поменять 2 числа местами без использования 3-й переменной.
-$a = 5;
-$b = 6;
-$a =  $a + $b;
-$b = $a - $b;
-$a = $a - $b;
-echo $a . ' , ' . $b;
+$num1 = 7;
+$num2 = 10;
+echo $num1 . " и " . $num2 . "<br/>";
+$num1 = $num1 + $num2;
+$num2 = $num1 - $num2;
+$num1 = $num1 - $num2;
+echo "B обратном порядке: " . $num1 . " и " . $num2;
 
 echo "<br>";
 //5. Разработать php-страницу, в которой выбрать правильные html-элементы и вывести 3 вопроса в следующем формате:
@@ -32,14 +37,21 @@ echo "<br>";
      //b) 2 — вопрос с 4 вариантами ответа и может быть несколько правильных;
      //c) 3 — вопрос с развернутым ответом.
 
-$true1 = 4;
-$true2 = 25;
-$true3 = 9;
-echo('Сколько будет 2 + 2: 2, 3, 4 или 5?');
-echo "<br>";
-echo('Из чего состоит колесо: шина, саморез, диск, камень?');
-echo "<br>";
-echo('Сколько будет 15 - 6?');
+
+echo '<br/><label for="">Сколько будет 2 + 2: <br/>
+    <input type="radio" name="age" value="2">2<br/>
+    <input type="radio" name="age" value="3">3<br/>
+    <input type="radio" name="age" value="4">4<br/>
+    <input type="radio" name="age" value="5">5<br/>
+    </label>';
+echo '<br/><label for="">Из чего состоит колесо: <br/>
+    <input type="checkbox" name="browser" value="шина">шина <br/>
+    <input type="checkbox" name="browser" value="саморез">саморез <br/>
+    <input type="checkbox" name="browser" value="диск">диск <br/>
+    <input type="checkbox" name="browser" value="камень">камень<br/>
+    </label>';
+echo '<br/><label for=""> Какой ваш дом мечт?: </label><br/>
+    <textarea name="comment" cols="40" rows="5"></textarea>';
 
 echo "<br>";     
 //6. Разработать страницу с переменными:
